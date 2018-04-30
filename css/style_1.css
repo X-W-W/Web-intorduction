@@ -1,0 +1,11 @@
+h4{
+	margin:0;
+}
+p{
+	margin:0;
+	margin-bottom: 8px;
+	margin-right: 50px;
+}
+#basic-info p,#contact p{
+	display: inline;
+}

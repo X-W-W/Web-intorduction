@@ -1,0 +1,60 @@
+h4{
+	margin:0;
+	float: left;
+	margin-left: 10px;
+}
+p{
+	margin:0;
+	margin-bottom: 8px;
+	margin-right: 50px;
+	float:left;
+	margin-left: 10px;
+}
+#basic-info p,#contact p,#education p,#experience p,#skills p{
+	display: inline;
+}
+#title{
+	margin: 0;
+	padding: 10px;
+	font-size: 20px;
+	background-color: gray;
+	text-align: left;
+	text-indent: 5px;
+	color: white;
+	font-weight: bold;
+}
+h2{
+	font-size: 20px;
+	text-align: center;
+	background-color: lightgrey;
+	margin: 0;
+	padding: 20px;
+	float: left;
+	clear: left;
+}
+
+div{
+	overflow: auto;
+	border-top:solid lightgrey;
+	border-bottom: solid white;
+	border-right:solid lightgrey;
+}
+}
+#skills h4:first-child{
+	float:left;
+}
+#skills p{
+	width: 850px;
+}
+#education p{
+	width:890px;
+}
+#experience p{
+	width:850px;
+}
+#basic-info{
+	border-top: 0;	
+}
+#experience{
+	border-bottom: solid lightgrey;
+}
