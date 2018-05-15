@@ -3,10 +3,15 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>简历</title>
-		<link rel="stylesheet" href="css/style_3.css" />
+		<link rel="stylesheet" href="css/style_3.css" id="style"/>
 	</head>
 	<body>
-		<h1 id="title">简历</h1>
+		<h1 id="title">简历<span><input type="button" value="你好~" id="Hello"/></span></h1>
+		<select id="select">
+			<option value="1">样式一</option>
+			<option value="2">样式二</option>
+			<option value="3">样式三</option>
+		</select>
 		<div id="basic-info">
 			<h2>基本信息</h2>
 			<p><strong>姓名</strong>&nbsp;&nbsp;张三</p>
@@ -40,5 +45,20 @@
 			<h4>SAN Doc</h4>
 			<p>作为文档工程师参与了SAN Doc编写</p>
 		</div>
+		<script>
+			document.getElementById("Hello").onclick=function(){
+				alert("Hello!");
+			}
+			var Style=document.getElementById("style")
+			document.getElementById("select").onchange=function(){
+				var num=document.getElementById("select").value
+				if(num==1)
+				Style.href="css/style_1.css"
+				if(num==2)
+				Style.href="css/style_2.css"
+				if(num==3)
+				Style.href="css/style_3.css"
+			}
+		</script>
 	</body>
 </html>
